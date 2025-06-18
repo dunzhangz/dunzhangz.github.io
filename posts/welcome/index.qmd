@@ -1,6 +1,6 @@
 ---
 title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+author: "Dun Zhang"
 date: "2025-06-16"
 categories: [news]
 ---
