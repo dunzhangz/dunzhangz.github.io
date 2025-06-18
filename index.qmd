@@ -1,5 +1,5 @@
 ---
-title: "zdblog"
+title: "Blog of Dun Zhang"
 listing:
   contents: posts
   sort: "date desc"
