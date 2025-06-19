@@ -11,7 +11,7 @@
     "href": "posts/adding interactivity/index.html",
     "title": "Adding interactive widgets in Web",
     "section": "",
-    "text": "from ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm\n\n\n\n\n\nprint(\"This is a test for adding interactive widgets in Web.\")\n\nThis is a test for adding interactive widgets in Web."
+    "text": "from ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -19,6 +19,13 @@
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/qmd interactivity/index.html",
+    "href": "posts/qmd interactivity/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\nfrom ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm"
   },
   {
     "objectID": "posts/Try ipynb/index.html",
@@ -53,6 +60,6 @@
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "How to build a simple blogging website like this one!\n\n\n\nQuick Start\n\n\n\n\n\n\n\n\n\nJun 19, 2025\n\n\nDun Zhang\n\n\n\n\n\n\n\n\n\n\n\n\nAdding interactive widgets in Web\n\n\n\nQuick Start\n\n\n\n\n\n\n\n\n\nJun 19, 2025\n\n\nDun Zhang\n\n\n\n\n\n\n\n\n\n\n\n\nTry ipynb\n\n\n\ncodes\n\nipynb\n\n\n\n\n\n\n\n\n\nJun 16, 2025\n\n\nDun Zhang\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 16, 2025\n\n\nDun Zhang\n\n\n\n\n\nNo matching items"
+    "text": "How to build a simple blogging website like this one!\n\n\n\nQuick Start\n\n\n\n\n\n\n\n\n\nJun 19, 2025\n\n\nDun Zhang\n\n\n\n\n\n\n\n\n\n\n\n\nAdding interactive widgets in Web\n\n\n\nQuick Start\n\n\n\n\n\n\n\n\n\nJun 19, 2025\n\n\nDun Zhang\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 16, 2025\n\n\nDun Zhang\n\n\n\n\n\n\n\n\n\n\n\n\nTry ipynb\n\n\n\ncodes\n\nipynb\n\n\n\n\n\n\n\n\n\nJun 16, 2025\n\n\nDun Zhang\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 16, 2025\n\n\nDun Zhang\n\n\n\n\n\nNo matching items"
   }
 ]
