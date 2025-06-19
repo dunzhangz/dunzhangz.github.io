@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/try ipywidgets/index.html",
       "/posts/how to build a blogging web/index.html",
       "/posts/adding interactivity/index.html",
       "/posts/qmd interactivity/index.html",
