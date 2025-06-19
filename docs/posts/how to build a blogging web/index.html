@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -163,6 +198,41 @@ ul.task-list li input[type="checkbox"] {
 <li>Absolute control of my website is guaranteed.</li>
 <li>Websites are accessible as long as one has a browser and internet connection.</li>
 </ul>
+</section>
+<section id="overview-of-how-this-website-is-built" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-how-this-website-is-built">Overview of how this website is built</h2>
+<ul>
+<li>All the content of this website is written with Python and Markdown language in Jupyter Notebooks using .ipynb file.</li>
+<li>Notebook files are converted to HTML using Quarto.</li>
+<li>HTML files are hosted in Github Pages (a static web server).</li>
+</ul>
+</section>
+<section id="tips" class="level2">
+<h2 class="anchored" data-anchor-id="tips">Tips</h2>
+<ul>
+<li>Quarto is recommended by fast.ai. Everyhing is just so easy with Quarto.</li>
+<li>Go to the official website of <a href="https://quarto.org/">Quarto</a> to learn how to use it. Follow “Quickstart” section, “Building a Blogging Website” section, and “Publishing a Website on Github Pages” section.</li>
+<li>Note that Quarto is recommended for users who are familiar with Python and Markdown language written in Jupyter Notebooks.</li>
+<li>Everything is recommended to be done in a new enviroment other than the base (boot) environment.</li>
+<li>Although some dynamic logic functions are supported in Quarto, I do not recommend to use since many minor problems exist which may frustrate you. Just regard this website as a static website.</li>
+</ul>
+<p>I will not provide detailed instructions on how to use Quarto here, as it is well documented in the official website. Instead, I will provide a few commonly used syntaxes in daily posting after I have built this blogging website.</p>
+<p>Every new post should be named <code>index.ipynb</code> stored in a new directory under the <code>posts</code> directory. At the top of each post, there is a YAML header that contains metadata about the post, such as title, date, and tags, that is in the following format:</p>
+<div id="43f4c249" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title: <span class="st">"How to build a simple static blogging website like this!"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>author: <span class="st">"Dun Zhang"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>date: <span class="st">"2025-06-19"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>categories: [Quick Start]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>jupyter: python3</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Some commonly used commands are</p>
+<div id="e68959a9" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto render</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>quarto render <span class="op">--</span>execute</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>quarto preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 </section>
