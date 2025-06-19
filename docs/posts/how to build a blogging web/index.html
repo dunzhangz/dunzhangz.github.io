@@ -215,6 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Note that Quarto is recommended for users who are familiar with Python and Markdown language written in Jupyter Notebooks.</li>
 <li>Everything is recommended to be done in a new enviroment other than the base (boot) environment.</li>
 <li>Although some dynamic logic functions are supported in Quarto, I do not recommend to use since many minor problems exist which may frustrate you. Just regard this website as a static website.</li>
+<li>For prototyping deployment, I recommend to generate the web app by using Gradio (providing web UI) with Hugging Face Spaces (providing free server). Then, write a hyperlink to the app website in this blogging website.</li>
 </ul>
 <p>I will not provide detailed instructions on how to use Quarto here, as it is well documented in the official website. Instead, I will provide a few commonly used syntaxes in daily posting after I have built this blogging website.</p>
 <p>Every new post should be named <code>index.ipynb</code> stored in a new directory under the <code>posts</code> directory. At the top of each post, there is a YAML header that contains metadata about the post, such as title, date, and tags, that is in the following format:</p>
