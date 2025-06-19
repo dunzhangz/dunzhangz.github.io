@@ -11,7 +11,7 @@
     "href": "posts/adding interactivity/index.html",
     "title": "Adding interactive widgets in Web",
     "section": "",
-    "text": "from ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm"
+    "text": "from ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm\n\n\n\n\n\nprint(\"Map with a marker at (52.204793, 360.121558) using NASAGIBS Modis Terra True Color CR basemap.\")\n\nMap with a marker at (52.204793, 360.121558) using NASAGIBS Modis Terra True Color CR basemap."
   },
   {
     "objectID": "posts/welcome/index.html",
